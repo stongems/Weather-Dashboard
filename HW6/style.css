@@ -2,7 +2,7 @@
   --theme-white: rgb(245, 254, 255);
   --theme-light: rgb(167, 174, 179);
   --theme-dark: #303030;
-  --theme-dark-trans: rgba(30, 30, 30, 0.89);
+  --theme-dark-trans: rgba(30, 30, 30, 0.7);
 }
 
 body {
@@ -34,6 +34,9 @@ body {
   background-color: var(--theme-dark-trans);
   border-radius: 1rem;
   color: white;
+  font-size: inherit;
+  margin:0;
+  border:rgb(245, 254, 255)
 }
 .btn {
   border-radius: 2em;
