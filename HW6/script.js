@@ -4,6 +4,7 @@ const faSearchBtn = document.querySelector(".fa-search");
 const weatherDiv = document.querySelector(".weather")
 const pastSearch = document.querySelector(".pastSearch")
 const citySaveResults = JSON.parse(localStorage.getItem("cities"))  ||  []
+const removeBtn = document.querySelector("deleteButton")
 
 console.log(citySaveResults)
 
@@ -31,6 +32,7 @@ faSearchBtn.addEventListener("click", function(){
     getWeather(searchBarText.value).then(function (data) {
         console.log(data);
         citySaveResults.push(searchBarText.value)
+        // MAY HAVE OBJECT OBJECT HERE WITHOUT THE STRINGIFY
         localStorage.setItem("cities", JSON.stringify(citySaveResults))
 
         let iconcode = data.weather[0].icon;
@@ -44,9 +46,15 @@ faSearchBtn.addEventListener("click", function(){
          <div class="wind">${Math.round(data.wind.speed)}mph</div>
         `
       });
+      // TEMPLATE LITERAL
 });
 
-
+removeBtn.addEventListener("click", (e) => {
+  e.target
+removeBtn.removeChild(ul)
+console.log("removeBtn")
+console.log(ul)
+});
 
 
 
