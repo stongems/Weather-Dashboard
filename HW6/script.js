@@ -49,12 +49,12 @@ faSearchBtn.addEventListener("click", function(){
       // TEMPLATE LITERAL
 });
 
-removeBtn.addEventListener("click", (e) => {
-  e.target
-removeBtn.removeChild(ul)
-console.log("removeBtn")
-console.log(ul)
-});
+// removeBtn.addEventListener("click", (e) => {
+//   e.target
+// removeBtn.removeChild(ul)
+// console.log("removeBtn")
+// console.log(ul)
+// });
 
 
 
