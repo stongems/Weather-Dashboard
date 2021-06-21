@@ -41,12 +41,11 @@ faSearchBtn.addEventListener("click", function(){
          <h2 class="city">${data.name}</h2>
          <div class="temp">${Math.round(data.main.temp)}°</div>
          <img class="icon" src="${iconurl}" alt="" />
-         <div class="description">${data.weather[1]}</div>
          <div class="humidity">${data.main.humidity}% Humidity</div>
          <div class="wind">${Math.round(data.wind.speed)}mph</div>
         `
       });
-      // TEMPLATE LITERAL
+      // TEMPLATE LITERAL^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 });
 
 // removeBtn.addEventListener("click", (e) => {
@@ -55,6 +54,6 @@ faSearchBtn.addEventListener("click", function(){
 // console.log("removeBtn")
 // console.log(ul)
 // });
-
+/* <div class="description">${data.weather[0]}</div> */
 
 
